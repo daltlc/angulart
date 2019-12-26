@@ -3,14 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PieceComponent } from './piece/piece.component';
+
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PieceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFullpageModule //*** added
+
   ],
   providers: [],
   bootstrap: [AppComponent]
