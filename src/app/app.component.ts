@@ -1,4 +1,6 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import * as AOS from 'aos';
+
 
 
 @Component({
@@ -7,9 +9,12 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.sass'],
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   config: any;
   fullpage_api: any;
+  ngOnInit() {
+    AOS.init();
+  }
 
   constructor() {
 

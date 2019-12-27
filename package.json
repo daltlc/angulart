@@ -21,6 +21,7 @@
     "@angular/router": "~8.2.14",
     "@fullpage/angular-fullpage": "0.0.14",
     "@ng-bootstrap/ng-bootstrap": "^5.1.4",
+    "aos": "^2.3.4",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

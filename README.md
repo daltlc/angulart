@@ -1,4 +1,6 @@
-# Artslide
+# Angulart
+
+This project was built to showcase some of my art, as well as get familiar with Angular. Very basic application. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
