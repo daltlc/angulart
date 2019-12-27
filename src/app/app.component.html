@@ -12,7 +12,8 @@
   /* @import url(~fullpage.js/dist/fullpage.min.css); */
 
   .content {
-    background-color: #FFE81C;
+    background-color:
+      #ffd83c;
     height: 98vh;
     font-family: Georgia, "Times New Roman", Times, serif;
     padding: 170px 100px;
@@ -41,7 +42,8 @@
     height: 100vh;
     width: 100%;
     padding: 0;
-    background-color: #FFE81C;
+    background-color:
+      #ffd83c;
     z-index: 1;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 120px;
@@ -58,7 +60,8 @@
     height: 100vh;
     width: 100%;
     padding: 0;
-    background-color: #FFE81C;
+    background-color:
+      #ffd83c;
     z-index: 1;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 30px;
@@ -68,7 +71,7 @@
     right: 0px;
     bottom: 0px;
     font-weight: 800;
-    top:40px;
+    top: 40px;
   }
 
   /* On screens that are 1625px or less, display mobile overlay */
@@ -109,9 +112,12 @@
     text-decoration: none;
     color: black;
   }
-  .welcomeFrame{
-    transition: all ease-in-out 0.3s;opacity:0;
+
+  .welcomeFrame {
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
   }
+
   .frame0 {
     transform: rotate(360deg);
     transition: all ease-in-out 0.3s;
@@ -153,7 +159,7 @@
   <div id="frame_container" class="fixed"></div>
   <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
     <div class="section">
-       Enjoy.
+      Enjoy.
       <div>
 
       </div>
@@ -176,7 +182,7 @@
 
     <div class="section" (click)="fullpage_api.moveSectionDown()">
       Diablo Lake
-      
+
       <div data-aos="fade">
         <div class="dot" ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave"
           popoverTitle="Pop title" style="background-color:#2a52be"></div>
