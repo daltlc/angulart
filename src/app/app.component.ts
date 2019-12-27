@@ -38,7 +38,6 @@ export class AppComponent {
         switch (destination.index) {
           case 0:
               frame.className = "frame0 fixed";
-
             break;
           case 1:
               frame.className = "frame1 fixed";
