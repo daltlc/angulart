@@ -7,16 +7,22 @@ import { PieceComponent } from './piece/piece.component';
 
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PieceComponent
+    PieceComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFullpageModule //*** added
+    AngularFullpageModule, //*** added
+    NgbModule
 
   ],
   providers: [],

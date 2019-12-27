@@ -12,30 +12,36 @@
   /* @import url(~fullpage.js/dist/fullpage.min.css); */
 
   .content {
-    background-color: #ffe81c;
+    background-color: #F4D03F;
     height: 98vh;
     font-family: Georgia, "Times New Roman", Times, serif;
     padding: 170px 100px;
     font-size: 90px;
     font-weight: 800;
   }
+
   .slide1 {
     background-color: red;
   }
+
   .fixed {
-    background-color: black;
-    height: 35rem;
-    width: 30rem;
+    height: 700px;
+    width: 500px;
     position: fixed;
-    right: 260px;
-    top: 180px;
+    right: 280px;
+    top: 140px;
+    background-image: url('/');
+    background-size: cover;
+    background-position: center;
+
   }
+
   #welcome_overlay {
     position: fixed;
     height: 100vh;
     width: 100%;
     padding: 0;
-    background-color: #ffe81c;
+    background-color: #F4D03F;
     z-index: 1;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 120px;
@@ -46,41 +52,76 @@
     bottom: 0px;
     font-weight: 800;
   }
+
   p {
     font-size: 26px;
   }
+
   .dot {
     height: 25px;
     width: 25px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    margin:6px;
+    margin: 6px;
   }
+
+  .logo {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 24px;
+    z-index: 10;
+  }
+
+  .logo:hover {
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
 </style>
 
 <!-- Toolbar -->
 <div id="welcome_overlay">
-  <h1>Welcome to the Gallery</h1>
+  <h2>Welcome to the Gallery</h2>
 </div>
 
 <div class="content" role="main">
+  <div class="logo"> <a href="https://daltonlcarr.netlify.com">DLC</a></div>
   <div id="frame_container" class="fixed"></div>
   <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
     <div class="section">
-      Some section1
+      Albino Snakes
       <div>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-      </div>
-      
+        <div class="dot" ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave"
+          popoverTitle="Pop title" style="background-color:#d68a59"></div>
+        <span class="dot" style="background-color:#000000"></span>
+        <span class="dot" style="background-color:#ffffff"></span>
+        <span class="dot" style="background-color:#e34234"></span>
 
-      <p>Some description</p>
+      </div>
+
+      <p></p>
     </div>
 
     <div class="section" (click)="fullpage_api.moveSectionDown()">
-      Some section2
+      Diablo Lake
+      <div>
+        <div class="dot" ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave"
+          popoverTitle="Pop title" style="background-color:#2a52be"></div>
+        <div class="dot" ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave"
+          popoverTitle="Pop title" style="background-color:#d68a59"></div>
+        <span class="dot" style="background-color:#ffec00"></span>
+        <span class="dot" style="background-color:#000000"></span>
+        <span class="dot" style="background-color:#ffffff"></span>
+
+      </div>
+
+      <p></p>
     </div>
     <!-- <div class="section">
           <div class="slide1">Slide 2.1</div>
@@ -88,7 +129,19 @@
           <div class="slide3">Slide 2.3</div>
         </div> -->
     <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">
-      Some section3
+      Bellevue Sunset
+      <div>
+        <div class="dot" ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave"
+          popoverTitle="Pop title" style="background-color:#2a52be"></div>
+        
+        <span class="dot" style="background-color:#e34234"></span>
+
+        <span class="dot" style="background-color:#ffec00"></span>
+        <span class="dot" style="background-color:#000000"></span>
+        <span class="dot" style="background-color:#ffffff"></span>
+      </div>
+
+      <p></p>
     </div>
   </div>
 </div>
