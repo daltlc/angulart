@@ -31,7 +31,8 @@ export class AppComponent {
 
         setTimeout(function () {
           let welcome = document.getElementById("welcome_overlay");
-          // welcome.style = "transition: all ease-in-out 0.3s;opacity:0;"
+          welcome.className = "welcomeFrame";
+
         }, 2000);
         let frame = document.getElementById("frame_container");
         console.log(frame);

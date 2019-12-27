@@ -53,12 +53,6 @@
     font-weight: 800;
   }
 
-  @media screen and (min-width: 1625px) {
-    #welcome_overlay {
-      display: none !important;
-    }
-  }
-
   .mobile_overlay {
     position: fixed;
     height: 100vh;
@@ -67,13 +61,14 @@
     background-color: #FFE81C;
     z-index: 1;
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     text-align: center;
     right: 0px;
     bottom: 0px;
     font-weight: 800;
+    top:40px;
   }
 
   /* On screens that are 1625px or less, display mobile overlay */
@@ -114,7 +109,9 @@
     text-decoration: none;
     color: black;
   }
-
+  .welcomeFrame{
+    transition: all ease-in-out 0.3s;opacity:0;
+  }
   .frame0 {
     transform: rotate(360deg);
     transition: all ease-in-out 0.3s;
@@ -144,9 +141,8 @@
 
 </style>
 
-<!-- Toolbar -->
 <div class="mobile_overlay">
-  <h2>Experience built for desktop..</h2>
+  <h2>Experience built for desktop. Please use 1680x1050 screen resolution or more. </h2>
 </div>
 <div id="welcome_overlay">
   <h2>Welcome to the Gallery</h2>
