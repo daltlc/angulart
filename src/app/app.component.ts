@@ -37,12 +37,15 @@ export class AppComponent {
         console.log(frame);
         switch (destination.index) {
           case 0:
-            frame.style = 'transform:rotate(0deg);transition: all ease-in-out 0.3s;background-image:url("assets/images/snakes.png")!important;'
+            frame.style = 'transform:rotate(360deg);transition: all ease-in-out 0.3s;background-image:url("assets/images/yellowBack.png")!important;'
             break;
           case 1:
-            frame.style = 'transform:rotate(180deg);transition: all ease-in-out 0.3s;background-image:url("assets/images/trees.png")!important;'
+            frame.style = 'transform:rotate(0deg);transition: all ease-in-out 0.3s;background-image:url("assets/images/snakes.png")!important;'
             break;
           case 2:
+            frame.style = 'transform:rotate(180deg);transition: all ease-in-out 0.3s;background-image:url("assets/images/trees.png")!important;'
+            break;
+          case 3:
             frame.style = 'transform:rotate(-90deg);transition: all ease-in-out 0.3s;right:200px!important;top:70px!important;background-image:url("assets/images/sunset.png")!important;'
             break;
         }

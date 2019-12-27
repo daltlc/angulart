@@ -7,7 +7,9 @@ import { PieceComponent } from './piece/piece.component';
 
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+// import {NgbPopover} from '@ng-bootstrap/ng-bootstrap';
+// import {NgbPopoverConfig} from '@ng-bootstrap/ng-bootstrap';
+
 
 
 
@@ -22,7 +24,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     AngularFullpageModule, //*** added
-    NgbModule
+    // NgbPopover, 
+    // NgbPopoverConfig
 
   ],
   providers: [],
