@@ -55,7 +55,7 @@
 
   @media screen and (min-width: 1625px) {
     #welcome_overlay {
-      display: none!important;
+      display: none !important;
     }
   }
 
@@ -80,7 +80,7 @@
 
   @media screen and (min-width: 1625px) {
     .mobile_overlay {
-      display: none!important;
+      display: none !important;
     }
   }
 
@@ -114,6 +114,33 @@
     color: black;
   }
 
+  .frame0 {
+    transform: rotate(360deg);
+    transition: all ease-in-out 0.3s;
+    background-image: url("assets/images/yellowBack.png") !important;
+  }
+
+  .frame1 {
+    transform: rotate(0deg);
+    transition: all ease-in-out 0.3s;
+    background-image: url("assets/images/snakes.png") !important;
+  }
+
+  .frame2 {
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.3s;
+    background-image: url("assets/images/trees.png") !important;
+  }
+
+  .frame3 {
+    transform: rotate(-90deg);
+    transition: all ease-in-out 0.3s;
+    right: 200px !important;
+    top: 70px !important;
+    background-image: url("assets/images/sunset.png") !important;
+
+  }
+
 </style>
 
 <!-- Toolbar -->
@@ -128,14 +155,14 @@
   <div class="logo"> <a href="https://daltonlcarr.netlify.com">DLC</a></div>
   <div id="frame_container" class="fixed"></div>
   <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
-      <div class="section">
-          Some painting in the meantime. 
-          <div>
-    
-          </div>
-    
-          <p>By: Dalton Carr</p>
-        </div>
+    <div class="section">
+      Some painting in the meantime.
+      <div>
+
+      </div>
+
+      <p>By: Dalton Carr</p>
+    </div>
     <div class="section">
       Albino Snakes
       <div>

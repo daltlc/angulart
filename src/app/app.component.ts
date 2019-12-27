@@ -31,22 +31,23 @@ export class AppComponent {
 
         setTimeout(function () {
           let welcome = document.getElementById("welcome_overlay");
-          welcome.style = "transition: all ease-in-out 0.3s;opacity:0;"
+          // welcome.style = "transition: all ease-in-out 0.3s;opacity:0;"
         }, 2000);
         let frame = document.getElementById("frame_container");
         console.log(frame);
         switch (destination.index) {
           case 0:
-            frame.style = 'transform:rotate(360deg);transition: all ease-in-out 0.3s;background-image:url("assets/images/yellowBack.png")!important;'
+              frame.className = "frame0 fixed";
+
             break;
           case 1:
-            frame.style = 'transform:rotate(0deg);transition: all ease-in-out 0.3s;background-image:url("assets/images/snakes.png")!important;'
+              frame.className = "frame1 fixed";
             break;
           case 2:
-            frame.style = 'transform:rotate(180deg);transition: all ease-in-out 0.3s;background-image:url("assets/images/trees.png")!important;'
+              frame.className = "frame2 fixed";
             break;
           case 3:
-            frame.style = 'transform:rotate(-90deg);transition: all ease-in-out 0.3s;right:200px!important;top:70px!important;background-image:url("assets/images/sunset.png")!important;'
+              frame.className = "frame3 fixed";
             break;
         }
       }
